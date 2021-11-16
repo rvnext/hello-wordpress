@@ -26,6 +26,13 @@ services:
     volumes:
       - db:/var/lib/mysql
 
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+    - 8015:80
+
 volumes:
   wordpress:
   db:
+  phpmyadmin:
